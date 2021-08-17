@@ -17,7 +17,6 @@ h4 {
 img {
   border: 2px solid rgb(0, 1, 49);
   border-radius: 8px 8px 0 0;
-  /* height: 18.10vh; */
   height: 136px;
   width: 136px;
   object-fit: contain;
@@ -25,7 +24,6 @@ img {
 }
 .image-container {
   width: 140px;
-  /* width: 18.13vh; */
   border: 2px solid rgb(0, 1, 49);
   border-radius: 8px;
   background-color:rgb(0, 1, 49);

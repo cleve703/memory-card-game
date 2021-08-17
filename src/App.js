@@ -50,7 +50,7 @@ let content = (
       <div className="scoreboard">Current Score: {score}</div>
       {shuffle(makes).map((mk) => {
         return(
-        <div className="image-container" key={mk.key} id={mk.id} onClick={selectMake}>
+        <div className="image-container" key={mk.id} id={mk.id} onClick={selectMake}>
           <div className="image-bg">
             <img src={mk.image} alt={mk.name.concat("-logo")} />
             <h4>{mk.name}</h4>
