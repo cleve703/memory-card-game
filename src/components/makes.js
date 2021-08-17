@@ -2,124 +2,148 @@ import uniqid from "uniqid";
 
   const makesData = [
     {
-      make: 'acura',
+      name: 'acura',
       image: '/img/acura.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'audi',
+      name: 'audi',
       image: '/img/audi.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'bmw',
+      name: 'bmw',
       image: '/img/bmw.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'cadillac',
+      name: 'cadillac',
       image: '/img/cadillac.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'chevrolet',
+      name: 'chevrolet',
       image: '/img/chevrolet.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'chrysler',
+      name: 'chrysler',
       image: '/img/chrysler.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'dodge',
+      name: 'dodge',
       image: '/img/dodge.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'ferrari',
+      name: 'ferrari',
       image: '/img/ferrari.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'ford',
+      name: 'ford',
       image: '/img/ford.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'gmc',
+      name: 'gmc',
       image: '/img/gmc.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'honda',
+      name: 'honda',
       image: '/img/honda.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },  
     {
-      make: 'hyundai',
+      name: 'hyundai',
       image: '/img/hyundai.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'jeep',
+      name: 'jeep',
       image: '/img/jeep.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'kia',
+      name: 'kia',
       image: '/img/kia.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'lamborghini',
+      name: 'lamborghini',
       image: '/img/lamborghini.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'lexus',
+      name: 'lexus',
       image: '/img/lexus.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'mercedes',
+      name: 'mercedes',
       image: '/img/mercedes.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'nissan',
+      name: 'nissan',
       image: '/img/nissan.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'porsche',
+      name: 'porsche',
       image: '/img/porsche.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'subaru',
+      name: 'subaru',
       image: '/img/subaru.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'tesla',
+      name: 'tesla',
       image: '/img/tesla.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'toyota',
+      name: 'toyota',
       image: '/img/toyota.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'volkswagen',
+      name: 'volkswagen',
       image: '/img/volkswagen.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
     {
-      make: 'volvo',
+      name: 'volvo',
       image: '/img/volvo.png',
-      id: uniqid()
+      id: uniqid(),
+      selected: false
     },
   ]
 
