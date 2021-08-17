@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { div } from "prelude-ls";
+import React, {useState} from "react";
+import makes from './components/makes'
+import './components/styles/main.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = props => {
+
+let content = (
+  <div className="container">
+    {makes.map((mk) => {
+      return(
+      <div className="image-container">
+        <div className="image-bg" key={mk.key}>
+          <img src={mk.image} alt={mk.make.concat("-logo")} />
+          <h4>{mk.make}</h4>
+        </div>
+      </div>  
+      )
+    }
+  )}  
+  </div>
+)
+return content
 }
 
 export default App;
