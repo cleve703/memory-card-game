@@ -3,145 +3,145 @@ import uniqid from "uniqid";
   const makesData = [
     {
       name: 'acura',
-      image: '/img/acura.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/acura.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'audi',
-      image: '/img/audi.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/audi.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'bmw',
-      image: '/img/bmw.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/bmw.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'cadillac',
-      image: '/img/cadillac.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/cadillac.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'chevrolet',
-      image: '/img/chevrolet.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/chevrolet.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'chrysler',
-      image: '/img/chrysler.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/chrysler.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'dodge',
-      image: '/img/dodge.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/dodge.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'ferrari',
-      image: '/img/ferrari.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/ferrari.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'ford',
-      image: '/img/ford.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/ford.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'gmc',
-      image: '/img/gmc.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/gmc.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'honda',
-      image: '/img/honda.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/honda.png',
       id: uniqid(),
       selected: false
     },  
     {
       name: 'hyundai',
-      image: '/img/hyundai.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/hyundai.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'jeep',
-      image: '/img/jeep.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/jeep.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'kia',
-      image: '/img/kia.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/kia.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'lamborghini',
-      image: '/img/lamborghini.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/lamborghini.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'lexus',
-      image: '/img/lexus.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/lexus.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'mercedes',
-      image: '/img/mercedes.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/mercedes.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'nissan',
-      image: '/img/nissan.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/nissan.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'porsche',
-      image: '/img/porsche.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/porsche.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'subaru',
-      image: '/img/subaru.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/subaru.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'tesla',
-      image: '/img/tesla.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/tesla.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'toyota',
-      image: '/img/toyota.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/toyota.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'volkswagen',
-      image: '/img/volkswagen.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/volkswagen.png',
       id: uniqid(),
       selected: false
     },
     {
       name: 'volvo',
-      image: '/img/volvo.png',
+      image: 'https://github.com/cleve703/memory-card-game/blob/gh-pages/img/volvo.png',
       id: uniqid(),
       selected: false
     },
