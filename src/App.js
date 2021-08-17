@@ -5,6 +5,7 @@ import './components/styles/main.css'
 
 const App = props => {
   const [makes, setMakes] = useState(makesData)
+  const [score, setScore] = useState(0);
 
   const removeItem = idx => {
     const temp = [...makes]
@@ -18,9 +19,16 @@ const App = props => {
     setMakes(temp);
   }
 
+  const restartGame = () => {
+    window.location.reload()
+  }
+
   const gameStatus = itm => {
     if (itm.selected) {
-      alert('you lose');
+      alert(`You lose - Final score is: ${score}`);
+      restartGame();
+    } else {
+      setScore(score+1)
     }
   }
 
@@ -35,18 +43,23 @@ const App = props => {
   }
 
 let content = (
-  <div className="container">
-    {shuffle(makes).map((mk) => {
-      return(
-      <div className="image-container" key={mk.key} id={mk.id} onClick={selectMake}>
-        <div className="image-bg">
-          <img src={mk.image} alt={mk.name.concat("-logo")} />
-          <h4>{mk.name}</h4>
-        </div>
-      </div>  
-      )
-    }
-  )}  
+  <div>
+    {/* <div className="scoreboard-container">
+    </div> */}
+    <div className="container">
+      <div className="scoreboard">Current Score: {score}</div>
+      {shuffle(makes).map((mk) => {
+        return(
+        <div className="image-container" key={mk.key} id={mk.id} onClick={selectMake}>
+          <div className="image-bg">
+            <img src={mk.image} alt={mk.name.concat("-logo")} />
+            <h4>{mk.name}</h4>
+          </div>
+        </div>  
+        )
+      }
+    )}  
+    </div>
   </div>
 )
 return content
