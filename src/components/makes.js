@@ -1,6 +1,6 @@
 import uniqid from "uniqid";
 
-  const makes = [
+  const makesData = [
     {
       make: 'acura',
       image: '/img/acura.png',
@@ -124,4 +124,4 @@ import uniqid from "uniqid";
   ]
 
 
-export default makes;
+export default makesData;

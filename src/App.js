@@ -1,13 +1,14 @@
-import { div } from "prelude-ls";
 import React, {useState} from "react";
-import makes from './components/makes'
+import makesData from './components/makes'
+import shuffle from "shuffle-array";
 import './components/styles/main.css'
 
 const App = props => {
+  const [makes, setMakes] = useState(makesData)
 
 let content = (
   <div className="container">
-    {makes.map((mk) => {
+    {shuffle(makes).map((mk) => {
       return(
       <div className="image-container">
         <div className="image-bg" key={mk.key}>
