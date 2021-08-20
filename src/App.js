@@ -1,11 +1,17 @@
-import React, { useState} from "react";
+import React, { useEffect, useState} from "react";
 import makesData from './components/makes'
 import shuffle from "shuffle-array";
 import './components/styles/main.css'
 
 const App = props => {
-  const [makes, setMakes] = useState(makesData)
+  const [makes, setMakes] = useState(makesData);
+  
   const [score, setScore] = useState(0);
+  
+  const [highScore, setHighScore] = useState(0);
+  useEffect(() => {
+    return score > highScore ? setHighScore(score) : null;
+  }, [score, highScore]);
 
   const removeItem = idx => {
     const temp = [...makes]
@@ -20,26 +26,35 @@ const App = props => {
   }
 
   const restartGame = () => {
-    window.location.reload()
+    const temp = [...makes];
+    temp.map(mk => mk.selected = false);
+    setMakes(temp);
+    setScore(0);
   }
 
   const gameStatus = itm => {
-    if (itm.selected) {
+    if (score === 24) {
+      alert(`You won!!! Final score is: ${score}`)
+      setHighScore(24);
+      restartGame();
+    } else if (itm.selected) {
       alert(`You lose - Final score is: ${score}`);
       restartGame();
     } else {
-      setScore(score+1)
+      setScore(score+1);
+      return true
     }
   }
 
   const selectMake = e => {
     e.preventDefault();
     const thisMake = makes.find(mk => mk.id === e.currentTarget.id);
-    gameStatus(thisMake);
-    thisMake.selected = true;
-    const thisMakeIndex = makes.indexOf(thisMake)
-    removeItem(thisMakeIndex);
-    addItem(thisMakeIndex);
+    if (gameStatus(thisMake) === true) {
+      thisMake.selected = true;
+      const thisMakeIndex = makes.indexOf(thisMake)
+      removeItem(thisMakeIndex);
+      addItem(thisMakeIndex);
+    }
   }
 
 let content = (
@@ -47,7 +62,10 @@ let content = (
     {/* <div className="scoreboard-container">
     </div> */}
     <div className="container">
-      <div className="scoreboard">Current Score: {score}</div>
+      <div className="scoreboard">
+        <span id="current-score">Current Score: {score}</span>
+        <span id="high-score">High Score: {highScore}</span>  
+      </div>
       {shuffle(makes).map((mk) => {
         return(
         <div className="image-container" key={mk.id} id={mk.id} onClick={selectMake}>
